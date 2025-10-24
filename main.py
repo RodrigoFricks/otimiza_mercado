@@ -1,5 +1,5 @@
 # main.py
-from Cadastro_Fornecedor import menu as menu_fornecedores
+from fornecedor import menu as menu_fornecedores
 from produto import menu_produtos
 from vendas import menu_vendas
 from clientes import menu_clientes
