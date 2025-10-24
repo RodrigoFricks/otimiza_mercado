@@ -1,7 +1,7 @@
 import json
 import os
 
-ARQUIVO_JSON = "fornecedores.json"
+ARQUIVO_JSON =  os.path.join("dados","fornecedores.json")
 
 def carregar_fornecedores():
     if not os.path.exists(ARQUIVO_JSON):
