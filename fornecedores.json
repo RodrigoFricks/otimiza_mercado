@@ -1,0 +1,26 @@
+[
+    {
+        "id": 2,
+        "nome": "MCDONALDS",
+        "cnpj": "12131242323",
+        "telefone": "",
+        "email": "MCDONALDS@GMAIL.COM",
+        "pais": "BRASIL",
+        "estado": "RJ",
+        "cidade": "RJ",
+        "bairro": "VICENTE DE CARVALHO",
+        "rua_num": "RUA BERNARDO TAVEIRA 235"
+    },
+    {
+        "id": 3,
+        "nome": "DOMINGUES E PINHO CONTADORES",
+        "cnpj": "1233142534234",
+        "telefone": "53656242423",
+        "email": "RAPHAELFEITOSA@DPC.COM.BR",
+        "pais": "BRASIL",
+        "estado": "RIO DE JANEIRO",
+        "cidade": "RIO DE JANEIRO",
+        "bairro": "CENTRO",
+        "rua_num": "AVENIDA RIO BRANCO 311"
+    }
+]
