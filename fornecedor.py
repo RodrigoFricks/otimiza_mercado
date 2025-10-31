@@ -32,7 +32,7 @@ def gerar_id(fornecedores):
     """Gera um novo ID baseado no maior existente, garantindo que seja único."""
     new_id = max(f["id"] for f in fornecedores) + 1 if fornecedores else 1
     while verificar_id_existe(new_id, fornecedores):
-        new_id += 1  # Garantir que o ID seja único
+        new_id += 1  
     return new_id
 
 # ===================== Funções de validação =====================
@@ -46,7 +46,7 @@ def validar_cnpj(cnpj):
 
 def validar_telefone(telefone):
     """Valida o formato do telefone (DDD + número)."""
-    return bool(re.match(r'^\(\d{2}\)\s?\d{4,5}-\d{4}$', telefone))
+    return bool(re.match(r'^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$', telefone))
 
 def validar_email(email):
     """Valida o formato do e-mail."""
@@ -70,7 +70,7 @@ def cadastrar_fornecedor(fornecedores):
 
     telefone = input("Telefone: ").strip()
     while not validar_telefone(telefone):
-        print("⚠️ Telefone inválido! Use o formato (XX) XXXX-XXXX ou (XX) XXXXX-XXXX")
+        print("⚠️ Telefone inválido! Use o formato (XX) XXXX-XXXX, XX XXXXX-XXXX ou XXXXXXXXXXX")
         telefone = input("Telefone: ").strip()
 
     email = input("Email: ").strip().lower()

@@ -60,9 +60,9 @@ def validar_cnpj(cnpj):
         return False
     return True
 
-def validar_telefone(telefone):
-    """Valida o formato do telefone (DDD + número)."""
-    return bool(re.match(r'^\(\d{2}\)\s?\d{4,5}-\d{4}$', telefone))
+# def validar_telefone(telefone):
+#     """Valida o formato do telefone (DDD + número)."""
+#     return bool(re.match(r'^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$', telefone))
 
 def validar_email(email):
     """Valida o formato do e-mail."""

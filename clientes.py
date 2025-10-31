@@ -72,7 +72,7 @@ def validar_cpf(cpf):
 
 def validar_telefone(telefone):
     """Valida o formato do telefone (DDD + número)."""
-    return bool(re.match(r'^\(\d{2}\)\s?\d{4,5}-\d{4}$', telefone))
+    return bool(re.match(r'^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$', telefone))
 
 def validar_email(email):
     """Valida o formato do e-mail."""
@@ -105,7 +105,7 @@ def cadastrar_cliente(clientes):
 
     telefone = input("Telefone: ").strip()
     while not validar_telefone(telefone):
-        print("⚠️ Telefone inválido! Use o formato (XX) XXXX-XXXX ou (XX) XXXXX-XXXX")
+        print("⚠️ Telefone inválido! Use o formato (XX) XXXX-XXXX, XX XXXXX-XXXX ou XXXXXXXXXXX")
         telefone = input("Telefone: ").strip()
 
     email = input("Email: ").strip().lower()
