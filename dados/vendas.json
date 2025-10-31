@@ -1,10 +1,1 @@
-[
-    {
-        "id_venda": 1,
-        "id_cliente": 1,
-        "id_produto": 1,
-        "quantidade": 20,
-        "valor_produto": 2.5,
-        "valor_total": 50.0
-    }
-]
+[]
