@@ -113,11 +113,11 @@ def cadastrar_cliente(clientes):
         print("⚠️ E-mail inválido!")
         email = input("Email: ").strip().lower()
 
-    endereco_pais = input("País: ").strip().upper()
-    endereco_estado = input("Estado: ").strip().upper()
-    endereco_cidade = input("Cidade: ").strip().upper()
-    endereco_bairro = input("Bairro: ").strip().upper()
-    endereco_rua = input("Rua e Número: ").strip().upper()
+    # endereco_pais = input("País: ").strip().upper()
+    # endereco_estado = input("Estado: ").strip().upper()
+    # endereco_cidade = input("Cidade: ").strip().upper()
+    # endereco_bairro = input("Bairro: ").strip().upper()
+    # endereco_rua = input("Rua e Número: ").strip().upper()
 
     cliente = {
         "id": gerar_id(clientes),
@@ -125,11 +125,11 @@ def cadastrar_cliente(clientes):
         "cpf": cpf,
         "telefone": telefone,
         "email": email,
-        "pais": endereco_pais,
-        "estado": endereco_estado,
-        "cidade": endereco_cidade,
-        "bairro": endereco_bairro,
-        "rua_num": endereco_rua
+        # "pais": endereco_pais,
+        # "estado": endereco_estado,
+        # "cidade": endereco_cidade,
+        # "bairro": endereco_bairro,
+        # "rua_num": endereco_rua
     }
 
     clientes.append(cliente)
@@ -168,11 +168,11 @@ def atualizar_cliente(clientes):
             c["cpf"] = input(f"Novo CPF ({c['cpf']}): ").strip() or c["cpf"]
             c["telefone"] = input(f"Novo telefone ({c['telefone']}): ").strip() or c["telefone"]
             c["email"] = input(f"Novo email ({c['email']}): ").strip().lower() or c["email"]
-            c["pais"] = input(f"Novo país ({c['pais']}): ").strip().upper() or c["pais"]
-            c["estado"] = input(f"Novo estado ({c['estado']}): ").strip().upper() or c["estado"]
-            c["cidade"] = input(f"Nova cidade ({c['cidade']}): ").strip().upper() or c["cidade"]
-            c["bairro"] = input(f"Novo bairro ({c['bairro']}): ").strip().upper() or c["bairro"]
-            c["rua_num"] = input(f"Nova rua/número ({c['rua_num']}): ").strip().upper() or c["rua_num"]
+            # c["pais"] = input(f"Novo país ({c['pais']}): ").strip().upper() or c["pais"]
+            # c["estado"] = input(f"Novo estado ({c['estado']}): ").strip().upper() or c["estado"]
+            # c["cidade"] = input(f"Nova cidade ({c['cidade']}): ").strip().upper() or c["cidade"]
+            # c["bairro"] = input(f"Novo bairro ({c['bairro']}): ").strip().upper() or c["bairro"]
+            # c["rua_num"] = input(f"Nova rua/número ({c['rua_num']}): ").strip().upper() or c["rua_num"]
 
             salvar_clientes(clientes)
             print("✅ Cliente atualizado com sucesso!\n")

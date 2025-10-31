@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id_produto": 1,
+        "nome": "ASA",
+        "preco": 2.5,
+        "estoque": 80,
+        "fornecedor_id": 1
+    }
+]
